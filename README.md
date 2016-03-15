@@ -12,7 +12,7 @@ This Nexus docker image contains the following software components:
 
 
 ## Ports
-This Nexus ports is exposed:
+This Nexus port is exposed:
 
   - 8081 (GUI)
 
