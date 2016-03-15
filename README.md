@@ -26,7 +26,7 @@ When you start the Nexus container, you can adjust the configuration by passing 
 ### `NEXUS_ADDITIONAL_JAVA_OPTS`
 
  - The additional options for the java process
- - Default value: ``
+ - Default value: 
 
 ### `NEXUS_CONTEXT_PATH`
 
