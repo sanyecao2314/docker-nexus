@@ -61,6 +61,6 @@ docker run -d --name nexus -p 8081:8081 -v /opt/docker/sonatype-work:/opt/sonaty
 
 ## Advanced topics
 
-### Accept self signed SSL certificates from Jenkins JRE
+### Accept self signed SSL certificates from Nexus JRE
 
 See parent image: [chrisipa/java](https://github.com/chrisipa/docker-java#accept-self-signed-ssl-certificates-from-jre)
