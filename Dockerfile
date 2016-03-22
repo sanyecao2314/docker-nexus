@@ -9,6 +9,11 @@ ENV NEXUS_CHECKSUM 6a2e026a6ad299fbfc0bd62ed05a0a85
 ENV NEXUS_CONTEXT_PATH /
 ENV NEXUS_JAVA_OPTS "$NEXUS_ADDITIONAL_JAVA_OPTS -server -Xmx768m -Xms256m -XX:MaxPermSize=192m -Djava.net.preferIPv4Stack=true"
 
+# install additional packages
+RUN apt-get update && \
+    apt-get install -y createrepo && \
+    apt-get clean
+
 # download and extract sonarqube to opt folder
 RUN wget http://download.sonatype.com/nexus/oss/nexus-$NEXUS_VERSION-bundle.zip && \
     echo "$NEXUS_CHECKSUM nexus-$NEXUS_VERSION-bundle.zip" | md5sum -c && \
