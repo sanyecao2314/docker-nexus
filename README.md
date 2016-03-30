@@ -42,19 +42,14 @@ When you start the Nexus container, you can adjust the configuration by passing 
 
 ### Example 1: Evaluation usage without persistent data
 
-1. Run Nexus container with this command:
+Run Nexus container with this command:
   ```
   docker run -d -p 8081:8081 chrisipa/nexus
   ```
 
 ### Example 2: Production usage with mounted volume and context path
 
-1. Create a folder for Sonatype work data on the docker host:
-  ```
-  sudo mkdir -p /opt/docker/sonatype-work
-  ```
-
-2. Run Nexus container with this command:
+Run Nexus container with this command:
   ```
 docker run -d --name nexus -p 8081:8081 -v /opt/docker/sonatype-work:/opt/sonatype-work chrisipa/nexus
   ```
