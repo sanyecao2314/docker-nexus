@@ -44,7 +44,7 @@ When you start the Nexus container, you can adjust the configuration by passing 
 
 Run Nexus container with this command:
   ```
-  docker run -d -p 8081:8081 chrisipa/nexus
+  docker run --rm -p 8081:8081 chrisipa/nexus
   ```
 
 ### Example 2: Production usage with mounted volume and context path
